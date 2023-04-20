@@ -1,0 +1,32 @@
+nav {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  font-weight: bold;
+}
+nav li {
+  padding: 10px;
+  cursor: pointer;
+}
+.link {
+  color: var(--bs-white);
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+  color: var(--bs-white);
+  text-underline-offset: 3px;
+}
+.size {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoLink {
+  text-decoration: none;
+  color: var(--bs-white);
+}
+.logoLink:hover {
+  text-decoration: none;
+  color: var(--bs-white);
+}

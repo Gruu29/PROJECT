@@ -1,0 +1,119 @@
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  max-width: 100vw;
+  padding: 40px 60px;
+  color: var(--bs-white);
+  column-gap: 50px;
+  background-color: var(--bs-primary);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 600px;
+}
+.avatar {
+  max-width: 100%;
+}
+h3 {
+  color: var(--bs-white);
+  text-align: center;
+}
+.surname {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bs-light);
+  max-width: 50vw;
+  padding: 30px 10px 10px;
+  border-radius: 10px;
+}
+.surname label {
+  color: var(--bs-secondary);
+}
+.surname input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  max-width: 70vw;
+  background-color: var(--bs-white);
+}
+.surname input:disabled {
+  background-color: var(--bs-secondary);
+  color:  var(--bs-white);
+}
+.businessCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  position: relative;
+}
+.businessCard span {
+  position: absolute;
+  color: var(--bs-white);
+  cursor: pointer;
+  font-size: 18px;
+  top: 15px;
+  right: 20px;
+}
+.businessCard span:hover {
+  text-decoration: none;
+}
+.approved {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 0;
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  min-height: 50px;
+  max-height: 50px;
+  background-color: var(--bs-light);
+  padding: 10px;
+  border-radius: 10px;
+}
+.approved input {
+  transform: scale(1.4);
+}
+.approved label {
+  padding-left: 10px;
+}
+.butts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.edit {
+  border: none;
+  background-color: var(--bs-success);
+  color: var(--bs-white);
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+}
+.delete {
+  border: none;
+  background-color: var(--bs-danger);
+  color: var(--bs-white);
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+}
+.saveRedact {
+  border: none;
+  background-color: var(--bs-warning);
+  color: var(--bs-white);
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+}

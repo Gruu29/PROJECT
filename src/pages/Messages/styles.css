@@ -1,0 +1,125 @@
+.new {
+  color: var(--bs-white);
+  padding: 0 5px;
+  border-radius: 2px;
+  flex: 1 1 25%
+}
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 55vh;
+  overflow: auto;
+  margin: 0 20px 50px;
+}
+.message {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 75%
+}
+
+.message li {
+  list-style: none;
+  color: var(--bs-secondary);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 50vw;
+  background-color: var(--bs-light);
+}
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modalDetail {
+  background-color: var(--bs-light);
+  position: fixed;
+  max-width: 50%;
+  top: 10%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  margin: 30px 0;
+}
+.modalContainer div {
+  display: flex;
+}
+.modalDetail input {
+  border: none;
+  background-color: var(--bs-white);
+  color: var(--bs-secondary);
+}
+.modalDetail select,
+.modalDetail input {
+  min-width: 20vw;
+  min-height: 5vh;
+  max-width: 80vw;
+  border: none;
+}
+.modalDetail select:disabled {
+  /*background-color: var(--bs-secondary);*/
+}
+.modalDetail label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--bs-secondary);
+}
+.modalDetail div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.modalContainer div {
+  flex-wrap: wrap;
+}
+.modalDetail h3 {
+  text-align: center;
+  color: var(--bs-secondary);
+}
+.modalDetail span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--bs-black);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.active {
+  color: var(--bs-black);
+  background-color: var(--bs-white);
+}
+.addMessage {
+  margin: 20px;
+}
+.wrapModal {
+  position: relative;
+}
+.buttons {
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+.buttons a {
+  text-decoration: none;
+}

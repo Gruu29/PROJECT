@@ -1,0 +1,124 @@
+.pic {
+  background-color: var(--bs-light);
+  text-align: center;
+}
+.pic img {
+  max-width: 50%;
+}
+.officers {
+  display: flex;
+  flex-direction: column;
+  max-height: 55vh;
+  overflow: auto;
+  margin: 10px;
+
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+}
+
+.approve {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: nowrap;
+  margin: 10px;
+  column-gap: 10px;
+}
+.approve li {
+  border-radius: 5px;
+  word-break: break-word;
+  color: var(--bs-primary);
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--bs-light);
+  min-width: 45vw;
+}
+.approve span {
+  border: none;
+  padding: 5px 10px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 15px;
+  color: var(--bs-danger);
+  cursor: pointer;
+}
+
+.approve button:nth-of-type(1) {
+  background-color: var(--bs-danger);
+}
+.approve button:nth-of-type(1):hover {
+  background-color: var(--bs-primary);
+}
+.officerContainer {
+  padding-bottom: 50px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addOfficer {
+  position: fixed;
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  top: 20%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.relat {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 10px;
+}
+.relat label {
+  margin-bottom: 5px;
+}
+.relat input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  cursor: pointer;
+}
+.addOfficer button {
+  margin-top: 20px;
+}
+.addOfficer input {
+  border: none;
+  border-radius: 5px;
+  min-width: 20vw;
+}
+.addButton {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin: 20px;
+}
+.loading {
+  color: var(--bs-primary);
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 451px) {
+  .officers {
+    margin: 10px;
+  }
+}

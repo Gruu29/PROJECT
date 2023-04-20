@@ -1,0 +1,123 @@
+.formPublic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--bs-light);
+  padding: 30px;
+  width: 450px;
+  border-radius: 10px;
+  transform: scale(0.9);
+}
+.report {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 100px 0;
+  gap: 100px;
+}
+.report img {
+  max-width: 50%;
+}
+.formPublic input {
+  width: 280px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.formPublic select {
+  border: none;
+  width: 280px;
+  height: 40px;
+}
+
+.formPublic label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+.formPublic h2 {
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.formPublic button {
+  margin-top: 20px;
+}
+
+.modalForm {
+  background-color: var(--bs-light);
+  position: fixed;
+  max-width: 50%;
+  top: 10%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.modalSubContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modalSubContainer div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modalForm span {
+  color: var(--bs-black);
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.modalForm input,
+.modalForm select {
+  border: none;
+  min-width: 30vw;
+  padding: 5px;
+  border-radius: 5px;
+}
+.modalForm select {
+}
+.modalForm button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+input:invalid,
+select:invalid {
+  background-color: var(--bs-white);
+  border: none;
+  outline: 2px solid var(--bs-danger);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .report {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .report img {
+    max-width: 100%;
+  }
+  .formPublic {
+    width: 350px;
+  }
+  .formPublic input {
+    width: 250px;
+  }
+  .formPublic select {
+    width: 250px;
+  }
+}
